@@ -201,6 +201,13 @@ footer address {
 }
 /* MEDIA QUERY (medium) */
 @media (min-width: 600px) {
+    main {
+        width: 100%; 
+        max-width: none; 
+        padding-left: 5vw; 
+        padding-right: 5vw; 
+        box-sizing: border-box; 
+    }
     #offerings {
         display: grid; 
         grid-template-columns: 1fr 1fr; 
@@ -221,9 +228,12 @@ footer address {
 }
 /* MEDIA QUERY (large) */
 @media (min-width: 900px) {
-    main { 
-        max-width: 850px; 
-        margin: auto; 
+    main {
+        width: 100%;
+        max-width: none; 
+        padding-left: 5vw; 
+        padding-right: 5vw; 
+        box-sizing: border-box;
     }
     .gallery-grid { 
         grid-template-columns: 1fr 1fr 1fr;
@@ -233,8 +243,12 @@ footer address {
 /* MEDIA QUERY (xl) */
 @media (min-width: 1200px) { 
     main { 
-        max-width: 800px;
+        width: 100%;
+        max-width: none; 
         margin: 0 auto;
+        padding-left: 16vw;
+        padding-right: 16vw;
+        box-sizing: border-box; 
     }
     .gallery-grid { 
         display: flex; 
