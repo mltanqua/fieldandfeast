@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Field & Feast</title>
 </head>
 <body>
     <header>
+        <img src="images/fieldandfeast-logo.png" alt="field and feast logo">
         <h1>Field & Feast</h1>
             <p>Harvested with Care, Served with Elegance</p>
+    </header>
         <nav> 
             <ul>
                 <li><a href="#about">About Us</a></li>
@@ -16,7 +18,6 @@
                 <li><a href="#gallery">Gallery</a></li>
             </ul>
         </nav>
-    </header>
     <main>
         <!--ABOUT-->
         <section id="about">
@@ -26,15 +27,15 @@
         <!--OFFERINGS-->
         <section id="offerings">
             <h2>Our Offerings</h2>
-            <article class="offering">
+            <section class="offering">
                 <h3>Artisan Provisions</h3>
                     <p>Hand-selected, seasonal ingredients sourced from our estate farm and trusted local growers. Each item is chosen for its freshness, flavor, and integrity.</p>
-            </article>
-            <article class="offering">
+            </section>
+            <section class="offering">
                 <h3>Exclusive Dining Experiences</h3>
                     <p>Join us for intimate chef-led tastings and farm-to-table feasts, where carefully crafted menus highlight the best of the season.</p>
-            </article>
-            <article class="offering">
+            </section>
+            <section class="offering offering-basket">
                 <h3>The Field & Feast Monthly Basket</h3>
                     <p>Experience a curated selection of premium seasonal ingredients delivered to your doorstep each month.</p>
                         <ul>
@@ -43,116 +44,118 @@
                             <li>Exclusive Recipes & Pairings: Thoughtfully designed by our chefs to inspire culinary creativity.</li>
                         </ul>
                     <p>Elevate your home dining with the finest farm-to-table offerings, elegantly packaged and delivered with care.</p>
-            </article>
+            </section>
         </section>
         <!--GALLERY-->
         <section id="gallery">
             <h2>A Gallery of Field & Feast</h2>
             <p>Experience the elegance and artistry behind Field & Feast through our curated collection of images. From lush fields and handcrafted ingredients to beautifully plated farm-to-table creations, each photo tells the story of our commitment to excellence.</p>
-            <div class="gallery-images">
-                <img
-                    src="images/tomatoes-200w.jpg"
-                    srcset="
-                        images/tomatoes-200w.jpg 200w,
-                        images/tomatoes-300w.jpg 300w, 
-                        images/tomatoes-600w.jpg 600w
-                    "
-                    sizes="
-                        (min-width: 1200px) 400px, 
-                        (min-width: 900px) 300px,
-                        (min-width: 600px) 250px,
-                        100vw
-                    "   
-                    alt="Heirloom tomatoes at peak ripeness."
-                >
-                <p>Heirloom tomatoes at peak ripeness.</p>
-            </div>
-            <div class="gallery-images">
-                <img
-                    src="images/olive-oil-200w.jpg"
-                    srcset="
-                        images/olive-oil-200w.jpg 200w,
-                        images/olive-oil-300w.jpg 300w, 
-                        images/olive-oil-600w.jpg 600w
-                    "
-                    sizes="
-                        (min-width: 1200px) 400px, 
-                        (min-width: 900px) 300px,
-                        (min-width: 600px) 250px,
-                        100vw
-                    "   
-                    alt="Drizzling golden olive oil over fresh harvest."
-                >
-                <p>Drizzling golden olive oil over fresh harvest.</p>
-            </div>
-            <div class="gallery-images">
-                <img
-                    src="images/table-setting-200w.jpg"
-                    srcset="
-                        images/table-setting-200w.jpg 200w,
-                        images/table-setting-300w.jpg 300w, 
-                        images/table-setting-600w.jpg 600w
-                    "
-                    sizes="
-                        (min-width: 1200px) 400px, 
-                        (min-width: 900px) 300px,
-                        (min-width: 600px) 250px,
-                        100vw
-                    "   
-                    alt="Elegant tablescape under the evening sky."
-                >
-                <p>Elegant tablescape under the evening sky.</p>
-            </div>
-            <div class="gallery-images">
-                <img
-                    src="images/chef-plating-200w.jpg"
-                    srcset="
-                        images/chef-plating-200w.jpg 200w,
-                        images/chef-plating-300w.jpg 300w, 
-                        images/chef-plating-600w.jpg 600w
-                    "
-                    sizes="
-                        (min-width: 1200px) 400px, 
-                        (min-width: 900px) 300px,
-                        (min-width: 600px) 250px,
-                        100vw
-                    "   
-                    alt="Artful plating with seasonal ingredients."
-                >
-                <p>Artful plating with seasonal ingredients.</p>
-            </div>
-            <div class="gallery-images">
-                <img
-                    src="images/basket-200w.jpg"
-                    srcset="
-                        images/basket-200w.jpg 200w,
-                        images/basket-300w.jpg 300w, 
-                        images/basket-600w.jpg 600w
-                    "
-                    sizes="
-                        (min-width: 1200px) 400px, 
-                        (min-width: 900px) 300px,
-                        (min-width: 600px) 250px,
-                        100vw
-                    "   
-                    alt="Our monthly basket, curated with care."
-                >
-                <p>Our monthly basket, curated with care.</p>
+            <div class="gallery-grid">
+                <figure class="gallery-images">
+                    <img
+                        src="images/tomatoes-200w.jpg"
+                        srcset="
+                            images/tomatoes-200w.jpg 200w,
+                            images/tomatoes-300w.jpg 300w, 
+                            images/tomatoes-600w.jpg 600w
+                        "
+                        sizes="
+                            (min-width: 1200px) 400px, 
+                            (min-width: 900px) 300px,
+                            (min-width: 600px) 250px,
+                            100vw
+                        "   
+                        alt="Heirloom tomatoes at peak ripeness."
+                    >
+                    <figcaption>Heirloom tomatoes at peak ripeness.</figcaption>
+                </figure>
+                <figure class="gallery-images">
+                    <img
+                        src="images/olive-oil-200w.jpg"
+                        srcset="
+                            images/olive-oil-200w.jpg 200w,
+                            images/olive-oil-300w.jpg 300w, 
+                            images/olive-oil-600w.jpg 600w
+                        "
+                        sizes="
+                            (min-width: 1200px) 400px, 
+                            (min-width: 900px) 300px,
+                            (min-width: 600px) 250px,
+                            100vw
+                        "   
+                        alt="Drizzling golden olive oil over fresh harvest."
+                    >
+                    <figcaption>Drizzling golden olive oil over fresh harvest.</figcaption>
+                </figure>
+                <figure class="gallery-images">
+                    <img
+                        src="images/table-setting-200w.jpg"
+                        srcset="
+                            images/table-setting-200w.jpg 200w,
+                            images/table-setting-300w.jpg 300w, 
+                            images/table-setting-600w.jpg 600w
+                        "
+                        sizes="
+                            (min-width: 1200px) 400px, 
+                            (min-width: 900px) 300px,
+                            (min-width: 600px) 250px,
+                            100vw
+                        "   
+                        alt="Elegant tablescape under the evening sky."
+                    >
+                    <figcaption>Elegant tablescape under the evening sky.</figcaption>
+                </figure>
+                <figure class="gallery-images">
+                    <img
+                        src="images/chef-plating-200w.jpg"
+                        srcset="
+                            images/chef-plating-200w.jpg 200w,
+                            images/chef-plating-300w.jpg 300w, 
+                            images/chef-plating-600w.jpg 600w
+                        "
+                        sizes="
+                            (min-width: 1200px) 400px, 
+                            (min-width: 900px) 300px,
+                            (min-width: 600px) 250px,
+                            100vw
+                        "   
+                        alt="Artful plating with seasonal ingredients."
+                    >
+                    <figcaption>Artful plating with seasonal ingredients.</figcaption>
+                </figure>
+                <figure class="gallery-images">
+                    <img
+                        src="images/basket-200w.jpg"
+                        srcset="
+                            images/basket-200w.jpg 200w,
+                            images/basket-300w.jpg 300w, 
+                            images/basket-600w.jpg 600w
+                        "
+                        sizes="
+                            (min-width: 1200px) 400px, 
+                            (min-width: 900px) 300px,
+                            (min-width: 600px) 250px,
+                            100vw
+                        "   
+                        alt="Our monthly basket, curated with care."
+                    >
+                    <figcaption>Our monthly basket, curated with care.</figcaption>
+                </figure>
             </div>
             <a class="full-gallery" href="#">View Our Full Gallery</a>
         </section>
         <!--CONTACT-->
+    </main>
         <footer> 
             <address>
                 123 Estate Lane, Wine Country, CA<br>
                 (555) 123-4567<br>
                 <a href="mailto:hello@fieldandfeast.com">hello@fieldandfeast.com</a>
             </address>
-            <nav class="socials">
+            <div class="socials">
                 <a href="https://www.instagram.com">Instagram</a>
                 <a href="https://www.facebook.com">Facebook</a>
-            </nav>
+            </div>
         </footer>
-    </main>
 </body>
 </html>
